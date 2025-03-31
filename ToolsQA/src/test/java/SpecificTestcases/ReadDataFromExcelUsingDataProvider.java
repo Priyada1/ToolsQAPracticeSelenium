@@ -12,7 +12,7 @@ public class ReadDataFromExcelUsingDataProvider {
     @DataProvider(name = "data-provider",parallel = true)
     public Object[][] fetchExcelData() throws IOException {
 
-        String path ="/Users/chakrapanipriyadarshi/Desktop/Selenium_2025_Practice/Selenium_Test_2025/src/test/test-resources/TestData1.xlsx";
+        String path ="/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/src/test/test-resources/TestData1.xlsx";
         String sheetName = "Team";
         testData=ExcelUtilities.getExcelData(path,sheetName);
         return testData;
@@ -30,7 +30,7 @@ public class ReadDataFromExcelUsingDataProvider {
 
     @Test(description = "Read data from excel without data provider")
     public void readDataFromExcelWithoutDataProvider() throws IOException {
-        String path ="/Users/chakrapanipriyadarshi/Desktop/Selenium_2025_Practice/Selenium_Test_2025/src/test/test-resources/TestData1.xlsx";
+        String path ="/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/src/test/test-resources/TestData1.xlsx";
         String sheetName = "Team";
         Object[][] data=ExcelUtilities.getExcelData(path,sheetName);
 
