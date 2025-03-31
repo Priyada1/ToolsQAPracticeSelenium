@@ -7,9 +7,9 @@
     </listeners>
     <test name="ToolsQA Practice">
         <classes>
-            <class name="selenium_framework.page_object_model.test_classes.ToolQALoginPageTest"/>
-            <class name="selenium_framework.page_object_model.test_classes.ToolsQaAlertFrameWindowTest"/>
-            <class name="selenium_framework.page_object_model.test_classes.ToolsQAElementsTest"/>
+            <class name="test_classes.ToolQALoginPageTest"/>
+            <class name="test_classes.ToolsQaAlertFrameWindowTest"/>
+            <class name="test_classes.ToolsQAElementsTest"/>
         </classes>
     </test>
 </suite>

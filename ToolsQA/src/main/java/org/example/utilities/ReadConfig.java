@@ -13,8 +13,7 @@ import java.util.Properties;
 public class ReadConfig {
 
     Properties prop;
-    String path = "/Users/chakrapanipriyadarshi/Desktop/Selenium_2025_Practice/Selenium_Test_2025/src/Configuration/config.properties";
-
+    String path = "/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/config/config.properties";
     public ReadConfig() {
         try {
             prop = new Properties();
