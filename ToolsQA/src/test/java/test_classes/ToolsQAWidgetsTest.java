@@ -29,6 +29,9 @@ public class ToolsQAWidgetsTest extends BaseClass {
     public void test(){
 
         System.out.println("widget test started");
+        System.out.println("widget test started");
+        System.out.println("widget test started");
+
     }
 
 
