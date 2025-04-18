@@ -4,6 +4,7 @@ import org.example.base.BaseClass;
 import org.example.page_object.ToolQALoginPage;
 import org.example.page_object.WidgetsPage;
 import org.example.utilities.ReadConfig;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -34,9 +35,23 @@ public class ToolsQAWidgetsTest extends BaseClass {
         widgetsPage = new WidgetsPage(driver);
         widgetsPage.clickOnWidgetsSection();
         widgetsPage.clickOnSelectMenuAndValidatePage();
-       // widgetsPage.clickOnSelectOptionsAndPickValueFromDropDown();
+        widgetsPage.clickOnSelectOptionsAndPickValueFromDropDown();
         widgetsPage.clickOnOldSelectMenuAndSelectValue("Indigo");
+    }
 
+    @Test
+    public void testSlider(){
+
+        System.out.println("slider test started");
+        widgetsPage = new WidgetsPage(driver);
+        widgetsPage.clickOnWidgetsSection();
+        widgetsPage.clickOnSliderPageAndValidate();
+        widgetsPage.moveSliderAndValidateSliderValue();
+    }
+
+    @AfterClass
+    public void cleanUp() {
+        driver.quit();
     }
 
 

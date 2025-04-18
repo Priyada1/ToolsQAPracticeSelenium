@@ -1,0 +1,16 @@
+SpecificTestcases/RetryTest.class
+SeleniumLocatorTest.class
+ToolsQaTest.class
+test_classes/ToolsQaAlertFrameWindowTest.class
+test_classes/ToolQALoginPageTest.class
+SpecificTestcases/JavaScriptExecutorTestCases.class
+SpecificTestcases/ParallelSingleMethodTest.class
+SpecificTestcases/PerformanceTestFromTestNG.class
+SpecificTestcases/RetryTestFromTestNg.class
+SpecificTestcases/ReadDataFromExcelUsingDataProvider.class
+test_classes/ToolsQAElementsTest.class
+SpecificTestcases/TakeScreenshotOfToolsQALoginPage.class
+test_classes/ToolsQAWidgetsTest.class
+SpecificTestcases/DataProviderConceptsTest.class
+SpecificTestcases/BrokenLinksTest.class
+TestCheck.class

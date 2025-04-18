@@ -6,6 +6,7 @@ import org.example.utilities.ReadConfig;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
@@ -22,9 +23,12 @@ public class TakeScreenshotOfToolsQALoginPage {
         String url = config.getBaseUrl();
         String browser = config.getBrowser();
 
-        WebDriverManager driverManager = new ChromeDriverManager();
-        driverManager.setup();
+//        WebDriverManager driverManager = new ChromeDriverManager();
+//        driverManager.setup();
+//        WebDriver driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get(url);
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);

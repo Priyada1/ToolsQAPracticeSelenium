@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class RetryTestFromTestNg {
 
     @Test
-    public void test1() {
+    public void test32() {
         System.out.println("Test 1");
         Assert.assertTrue(true);
     }

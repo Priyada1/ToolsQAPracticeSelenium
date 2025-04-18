@@ -1,6 +1,7 @@
 package org.example.page_object;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,27 +36,26 @@ public class WidgetsPage {
     private WebElement selectOptions;
 
 
-
     //
-    @FindBy(id="oldSelectMenu")
+    @FindBy(id = "oldSelectMenu")
     public WebElement oldSelectMenu;
 
     public void clickOnWidgetsSection() {
         widgets.click();
     }
 
-    public void clickOnSelectMenuAndValidatePage(){
-        JavascriptExecutor js =(JavascriptExecutor) driver;
+    public void clickOnSelectMenuAndValidatePage() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         // Scroll down by 500 pixels
         // js.executeScript("window.scrollBy(0, 2500);");
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-       // js.executeScript( "arguments[0].scrollIntoView(true);", selectMenu);
         try {
             Thread.sleep(2000);
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        // js.executeScript( "arguments[0].scrollIntoView(true);", selectMenu);
+
         explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class ='text' and text()='Select Menu']")));
         WebElement element = driver.findElement(By.xpath("//span[@class ='text' and text()='Select Menu']"));
         explicitWait.until(ExpectedConditions.elementToBeClickable(element));
@@ -65,23 +65,75 @@ public class WidgetsPage {
         Assert.assertEquals(selectMenuHeading.getText().trim(), "Select Menu");
     }
 
-    public void clickOnSelectOptionsAndPickValueFromDropDown(){
+    public void clickOnSelectOptionsAndPickValueFromDropDown() {
         selectOptions.click();
-       // Select select = new Select(selectOptions);
-
-      //  List<WebElement> options = driver.findElements(By.cssSelector(".your-dropdown-options-container .your-option-selector"));
-        String valueToSelect = "Group 2, option 1";
-      //  WebElement element = driver.findElement(By.xpath("//div[@class=' css-1uccc91-singleValue']"));
-       // element.sendKeys(valueToSelect);
-        selectOptions.sendKeys(Keys.ENTER);
+        WebElement element = driver.findElement(By.xpath("//div[@class =' css-26l3qy-menu']/descendant::div[2]/child::div[2]/div[1]"));
+        element.click();
 
     }
 
-    public void clickOnOldSelectMenuAndSelectValue(String val){
+    public void clickOnOldSelectMenuAndSelectValue(String val) {
 
         Select select = new Select(oldSelectMenu);
         select.selectByVisibleText(val);
 
+        //List<WebElement> list= oldSelectMenu.getOptions() ; all dropDown values
+
     }
+
+    //Slider
+
+    @FindBy(xpath = "//span[@class = 'text' and text() ='Slider']")
+    private WebElement slider;
+
+    @FindBy(xpath = "//input[@type='range']")
+    private WebElement sliderRange;
+
+    @FindBy(id ="sliderValue")
+    private WebElement sliderValue;
+
+    @FindBy(xpath ="//h1[@class ='text-center' and text() = 'Slider']")
+    private WebElement sliderHeading;
+
+
+    public void clickOnSliderPageAndValidate(){
+
+        slider.click();
+        Assert.assertTrue(sliderHeading.isDisplayed());
+        Assert.assertEquals(sliderHeading.getText().trim(),"Slider");
+
+    }
+
+    public void moveSliderAndValidateSliderValue(){
+
+        Actions action = new Actions(driver);
+        System.out.println("slider-location before : "+ sliderRange.getLocation()); //(455, 523)
+//        System.out.println("slider-size: "+ sliderRange.getSize()); //(605, 38)
+//        action.dragAndDropBy(sliderRange,50,363).perform();
+//        System.out.println("slider-location: "+ sliderRange.getLocation());
+        action.moveToElement(sliderRange)
+                .clickAndHold()
+                .moveByOffset(50, 0)  // Horizontal
+                .release()
+                .perform();
+        System.out.println("slider-location after : "+ sliderRange.getLocation()); //(455, 363)
+        System.out.println("slider- value: "+ sliderValue.getDomAttribute("value"));
+
+        //2nd way
+
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        je.executeScript("arguments[0].setAttribute('value','97')",sliderValue);
+
+        System.out.println("slider-location after : "+ sliderRange.getLocation()); //(455, 363)
+        System.out.println("slider-value: "+ sliderValue.getDomAttribute("value"));
+
+
+
+
+
+
+
+    }
+
 
 }

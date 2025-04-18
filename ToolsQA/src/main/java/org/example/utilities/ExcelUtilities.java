@@ -26,7 +26,7 @@ public class ExcelUtilities {
                 Row row = sheet.getRow(i);
                 for (int j = 0; j < columnCount; j++) {
                     Cell cell = row.getCell(j);
-                    data[i - 1][j] = cell.toString();
+                    data[i-1][j] = cell.toString();
                 }
             }
 
