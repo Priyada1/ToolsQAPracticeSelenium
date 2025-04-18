@@ -227,7 +227,7 @@ div[@role='gridcell']: This selects all div elements that have the role attribut
             for(WebElement a: elementList){
                 actualValue.add(a.getText());
             }
-            actualValue.removeLast();
+           // actualValue.removeLast();
 
             // Validation
             //Assert.assertEquals(actualValue,output,"Web table values do not match expected values.");

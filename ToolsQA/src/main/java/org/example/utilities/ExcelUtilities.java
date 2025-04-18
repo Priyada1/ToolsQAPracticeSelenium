@@ -16,7 +16,7 @@ public class ExcelUtilities {
         XSSFWorkbook xssfWorkbook = null;
         FileInputStream fis = null;
         try {
-           fis = new FileInputStream(filePath);
+            fis = new FileInputStream(filePath);
             xssfWorkbook = new XSSFWorkbook(fis);
             Sheet sheet = xssfWorkbook.getSheet(sheetName);
             int rowCount = sheet.getLastRowNum();
@@ -26,7 +26,7 @@ public class ExcelUtilities {
                 Row row = sheet.getRow(i);
                 for (int j = 0; j < columnCount; j++) {
                     Cell cell = row.getCell(j);
-                    data[i - 1][j] = cell.toString();
+                    data[i-1][j] = cell.toString();
                 }
             }
 

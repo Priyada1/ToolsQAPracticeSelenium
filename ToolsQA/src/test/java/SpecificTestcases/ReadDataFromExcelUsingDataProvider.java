@@ -34,7 +34,7 @@ public class ReadDataFromExcelUsingDataProvider {
         String sheetName = "Team";
         Object[][] data=ExcelUtilities.getExcelData(path,sheetName);
 
-         System.out.println("Taking data from excel without data provider: "+data[0][0]+" | "+data[0][1]+" | "+data[0][2]+" | "+data[0][3]);
+        // System.out.println("Taking data from excel without data provider: "+data[0][0]+" | "+data[0][1]+" | "+data[0][2]+" | "+data[0][3]);
 
          for(int i=0;i<data.length;i++)
          {
@@ -42,13 +42,14 @@ public class ReadDataFromExcelUsingDataProvider {
              {
                     System.out.print(data[i][j]+" ||| ");
              }
+             System.out.println();
          }
 
-        for (Object[] datum : data) {
-            for (Object o : datum) {
-                System.out.println(o + " | ");
-            }
-        }
+//        for (Object[] datum : data) {
+//            for (Object o : datum) {
+//                System.out.println(o + " | ");
+//            }
+//        }
     }
 
 

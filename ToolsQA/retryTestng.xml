@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="TestRetrySuit">
     <listeners>
-        <listener class-name="org.example.utilities.MyTransform"/>
+        <listener class-name="org.example.utilities.DynamicRetryTransformer"/>
         <listener class-name="org.example.utilities.TestListener"/>
     </listeners>
     <test name="RetryTest">

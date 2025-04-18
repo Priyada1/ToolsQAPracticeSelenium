@@ -41,8 +41,11 @@ public class ToolsQAElementsTest extends BaseClass {
         elementsPage.clickOnElements();
         elementsPage.clickOnTextBox();
         elementsPage.validateTextPage();
-        elementsPage.enterFullName("Test user" + random.nextInt(100));
-        elementsPage.enterEmail("Test_User-" + random.nextInt(100) + "@ymail.com");
+        String name = "Test user" + random.nextInt(100);
+        String email = "Test_User-" + random.nextInt(100) + "@ymail.com";
+        System.out.println(name + "  >>>>>  " + email);
+        elementsPage.enterFullName(name);
+        elementsPage.enterEmail(email);
         elementsPage.enterCurrentAddress("house-no #50- bangalore");
         elementsPage.enterPermanentAddress("house-no #50- bangalore-permanent ");
         elementsPage.clickOnSubmitButton();

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TestRetrySuit</th></tr>
+<tr><td><a href="#t0">ToolsQA Practice</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">95,110</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestRetrySuit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ToolsQA Practice &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test_classes.ToolQALoginPageTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1745005916077</td><td rowspan="1">2054</td></tr><tr><th colspan="4">ToolsQA Practice &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">test_classes.ToolQALoginPageTest</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1745005900290</td><td rowspan="1">15782</td></tr><tr><th colspan="4">ToolsQA Practice &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">test_classes.ToolsQAElementsTest</td><td><a href="#m2">textBoxTest</a></td><td rowspan="1">1745005972495</td><td rowspan="1">723</td></tr><tr class="passedeven"><td><a href="#m3">validateActionOperationOnButton</a></td><td rowspan="1">1745005973219</td><td rowspan="1">14490</td></tr><tr class="passedeven"><td><a href="#m4">validateLinksPage</a></td><td rowspan="1">1745005987712</td><td rowspan="1">3301</td></tr><tr class="passedeven"><td><a href="#m5">validateWebTableInsideElementPage</a></td><td rowspan="1">1745005991016</td><td rowspan="1">506</td></tr><tr class="passedodd"><td rowspan="2">test_classes.ToolsQaAlertFrameWindowTest</td><td><a href="#m6">validateAlerts</a></td><td rowspan="1">1745005934279</td><td rowspan="1">717</td></tr><tr class="passedodd"><td><a href="#m7">validatedNestedFrames</a></td><td rowspan="1">1745005934996</td><td rowspan="1">20371</td></tr></tbody>
+</table>
+<h2>ToolsQA Practice</h2><h3 id="m0">test_classes.ToolQALoginPageTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at org.example.page_object.ToolQALoginPage.validateLoginPage(ToolQALoginPage.java:69)
+	at test_classes.ToolQALoginPageTest.loginTest(ToolQALoginPageTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test_classes.ToolQALoginPageTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text&quot;&gt;...&lt;/span&gt; is not clickable at point (128, 765). Other element would receive the click: &lt;div id=&quot;fixedban&quot; style=&quot;width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6991ad784602b7022288753be016c360, clickElement {id=f.F4FBC2D9B7A86D26E4AF71D20994A4E1.d.CC509CAACDCF6CBCB15831DA71574AFF.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53139/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (6991ad784602b7022288753be016c360)] -&gt; xpath: //li[@id=&apos;item-2&apos;]/span[text()=&apos;Book Store&apos;]]
+Session ID: 6991ad784602b7022288753be016c360
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at org.example.page_object.ToolsQAProfilePage.clickOnBookStore(ToolsQAProfilePage.java:59)
+	at test_classes.ToolQALoginPageTest.loginTest(ToolQALoginPageTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test_classes.ToolsQAElementsTest#textBoxTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test_classes.ToolsQAElementsTest#validateActionOperationOnButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test_classes.ToolsQAElementsTest#validateLinksPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test_classes.ToolsQAElementsTest#validateWebTableInsideElementPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test_classes.ToolsQaAlertFrameWindowTest#validateAlerts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test_classes.ToolsQaAlertFrameWindowTest#validatedNestedFrames</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

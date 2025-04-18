@@ -60,6 +60,11 @@ public class AlertsFramesWindowPage {
     public void validateNormalAlertButton() {
         alertButton.click();
         Alert alert = explicitWait.until(ExpectedConditions.alertIsPresent());
+              /* it is doing two things in one:
+        Waiting: It waits for the alert to appear.
+        Switching: Once the alert is present, it automatically switches the WebDriver's context to that alert and returns the Alert object.
+        Alert alert = driver.switchTo().alert();
+        */
         System.out.println(alert.getText());
         alert.accept();
         // Verify that the alert is gone.
@@ -79,19 +84,31 @@ public class AlertsFramesWindowPage {
     public void validateConfirmAlert() {
         confirmAlert.click();
         Alert alert = explicitWait.until(ExpectedConditions.alertIsPresent());
+        /* is doing two things in one:
+        Waiting: It waits for the alert to appear.
+        Switching: Once the alert is present, it automatically switches the WebDriver's context to that alert and returns the Alert object.
+        Alert alert = driver.switchTo().alert();
+        */
         System.out.println(alert.getText());
         alert.accept();
         explicitWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
         System.out.println(confirmResult.getText());
         Assert.assertEquals(confirmResult.getText(), "You selected Ok");
-        //dismiss alert
+
         confirmAlert.click();
         Alert alert2 = explicitWait.until(ExpectedConditions.alertIsPresent());
         System.out.println(alert2.getText());
+        //dismiss alert
         alert2.dismiss();
         explicitWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
         System.out.println(confirmResult.getText());
         Assert.assertEquals(confirmResult.getText(), "You selected Cancel");
+        /*
+        How alertIsPresent() Works: Internally, when WebDriverWait executes ExpectedConditions.alertIsPresent(),
+        it doesn't just check a boolean flag. It actively tries to switch the WebDriver's focus to the alert. If
+        an alert is found, it returns the Alert object, effectively performing the driver.switchTo().alert() operation
+         behind the scenes. If no alert is found within the specified timeout period, it throws a TimeoutException.
+         */
     }
 
     public void validatePromptAlert() {
@@ -113,34 +130,33 @@ public class AlertsFramesWindowPage {
     @FindBy(xpath = "//h1[@class='text-center' and text() ='Nested Frames']")
     private WebElement nestedFramePageHeading;
 
-    public void clickOnNestedFrameAndValidateHeading(){
+    public void clickOnNestedFrameAndValidateHeading() {
         nestedFrame.click();
-        Assert.assertEquals(nestedFramePageHeading.getText().trim(),"Nested Frames");
+        Assert.assertEquals(nestedFramePageHeading.getText().trim(), "Nested Frames");
     }
 
-    public void validateInnerFrame(){
+    public void validateInnerFrame() {
 
-       driver.switchTo().frame("frame1");
-       WebElement parentFrame= driver.findElement(By.xpath("//body[text()='Parent frame']"));
-       Assert.assertEquals(parentFrame.getText(),"Parent frame");
-       System.out.println("parent-frame-text: "+parentFrame.getText());
-       driver.switchTo().defaultContent();
-       WebElement element = driver.findElement(By.xpath("//*[@id='framesWrapper']/div[contains(text(), 'Sample Nested Iframe page.')]"));
-       String content = element.getText();
-       System.out.println(content);
-       Assert.assertEquals(content,"Sample Nested Iframe page. There are nested iframes in this page. Use browser inspecter or firebug to check out the HTML source. In total you can switch between the parent frame and the nested child frame.");
+        driver.switchTo().frame("frame1");
+        WebElement parentFrame = driver.findElement(By.xpath("//body[text()='Parent frame']"));
+        Assert.assertEquals(parentFrame.getText(), "Parent frame");
+        System.out.println("parent-frame-text: " + parentFrame.getText());
+        driver.switchTo().defaultContent();
+        WebElement element = driver.findElement(By.xpath("//*[@id='framesWrapper']/div[contains(text(), 'Sample Nested Iframe page.')]"));
+        String content = element.getText();
+        System.out.println(content);
+        Assert.assertEquals(content, "Sample Nested Iframe page. There are nested iframes in this page. Use browser inspecter or firebug to check out the HTML source. In total you can switch between the parent frame and the nested child frame.");
 
-       driver.switchTo().frame("frame1");
+        driver.switchTo().frame("frame1");
         // 1. Find the iframe element
         WebElement iframeElement = driver.findElement(By.xpath("//iframe[@srcdoc='<p>Child Iframe</p>']"));
 
         // 2. Switch to the iframe
         driver.switchTo().frame(iframeElement);
-       Assert.assertEquals(driver.findElement(By.tagName("p")).getText(),"Child Iframe");
+        Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "Child Iframe");
         driver.switchTo().defaultContent();
 
         System.out.println("Iframe handled successfully.");
-
 
 
     }

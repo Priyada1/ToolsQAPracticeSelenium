@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestRetrySuit]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="org.example.utilities.DynamicRetryTransformer"/>
+    <listener class-name="org.example.utilities.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="ToolsQA Practice(failed)" verbose="0">
+    <classes>
+      <class name="test_classes.ToolQALoginPageTest">
+        <methods>
+          <include name="setUPClass"/>
+          <include name="loginTest"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- test_classes.ToolQALoginPageTest -->
+    </classes>
+  </test> <!-- ToolsQA Practice(failed) -->
+</suite> <!-- Failed suite [TestRetrySuit] -->
