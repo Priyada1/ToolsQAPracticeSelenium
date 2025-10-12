@@ -22,7 +22,6 @@ BookStorePage bookStorePage;
         userName = readConfig.getUserName();
         password = readConfig.getPassword();
         setup();
-
        // driver.get(readConfig.getBaseUrl());
     }
 

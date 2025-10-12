@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="95.658" tests="8" errors="0" skipped="1" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="20.761" tests="9" errors="0" skipped="9" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="/Users/chakrapanipriyadarshi/.cache/selenium/chromedriver/mac-arm64/135.0.7049.95/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Users/chakrapanipriyadarshi/Library/Java/JavaVirtualMachines/corretto-17.0.12/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/target/surefire/surefirebooter6766257473484336818.jar /Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/target/surefire 2025-04-19T01-21-35_874-jvmRun1 surefire8402371386925218845tmp surefire_017815641233871175444tmp"/>
+    <property name="sun.java.command" value="/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/target/surefire/surefirebooter14869289579880771167.jar /Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/target/surefire 2025-04-19T02-07-23_714-jvmRun1 surefire6461540276884927732tmp surefire_0708118427779113595tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/target/test-classes:/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/target/classes:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-java/4.28.1/selenium-java-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-api/4.28.1/selenium-api-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.28.1/selenium-chrome-driver-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.28.1/selenium-chromium-driver-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-json/4.28.1/selenium-json-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.28.1/selenium-manager-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.28.1/selenium-devtools-v130-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.28.1/selenium-devtools-v131-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v132/4.28.1/selenium-devtools-v132-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.28.1/selenium-devtools-v85-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.28.1/selenium-edge-driver-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.28.1/selenium-firefox-driver-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-http/4.28.1/selenium-http-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.28.1/selenium-ie-driver-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.28.1/selenium-remote-driver-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/google/guava/guava/33.4.0-jre/guava-33.4.0-jre.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-api/1.46.0/opentelemetry-api-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-context/1.46.0/opentelemetry-context-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.46.0/opentelemetry-exporter-logging-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.46.0/opentelemetry-sdk-common-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.46.0/opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.46.0/opentelemetry-sdk-extension-autoconfigure-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.46.0-alpha/opentelemetry-api-incubator-1.46.0-alpha.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.46.0/opentelemetry-sdk-trace-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.46.0/opentelemetry-sdk-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.46.0/opentelemetry-sdk-metrics-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.46.0/opentelemetry-sdk-logs-1.46.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-os/4.28.1/selenium-os-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.28.1/selenium-safari-driver-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/seleniumhq/selenium/selenium-support/4.28.1/selenium-support-4.28.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/github/bonigarcia/webdrivermanager/5.6.0/webdrivermanager-5.6.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/slf4j/slf4j-simple/2.0.7/slf4j-simple-2.0.7.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/chakrapanipriyadarshi/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/chakrapanipriyadarshi/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/chakrapanipriyadarshi/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/target/surefire/surefirebooter6766257473484336818.jar"/>
+    <property name="surefire.real.class.path" value="/Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/target/surefire/surefirebooter14869289579880771167.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.12+7-LTS"/>
@@ -58,137 +58,48 @@
     <property name="java.class.version" value="61.0"/>
   </properties>
   <testcase name="loginTest" classname="test_classes.ToolQALoginPageTest" time="0">
-    <skipped message="element click intercepted: Element &lt;span class=&quot;text&quot;&gt;...&lt;/span&gt; is not clickable at point (128, 765). Other element would receive the click: &lt;div id=&quot;fixedban&quot; style=&quot;width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=135.0.7049.96)&#10;Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6991ad784602b7022288753be016c360, clickElement {id=f.F4FBC2D9B7A86D26E4AF71D20994A4E1.d.CC509CAACDCF6CBCB15831DA71574AFF.e.53}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53139/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (6991ad784602b7022288753be016c360)] -&gt; xpath: //li[@id=&apos;item-2&apos;]/span[text()=&apos;Book Store&apos;]]&#10;Session ID: 6991ad784602b7022288753be016c360"/>
-    <system-out><![CDATA[login page text: Login
-userName at profile page: test4321
-]]></system-out>
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=135.0.7049.96)&#10;Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5c404292b3ce35e7ea6365da22ddb0ca, findElement {value=text-center, using=class name}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55185/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5c404292b3ce35e7ea6365da22ddb0ca"/>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Apr 19, 2025 1:21:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 19, 2025 2:07:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 135
-Apr 19, 2025 1:21:40 AM org.example.base.BaseClass setup
+Apr 19, 2025 2:07:35 AM org.example.base.BaseClass setup
 INFO: url opened:  https://demoqa.com/login
 ]]></system-err>
   </testcase>
-  <testcase name="loginTest" classname="test_classes.ToolQALoginPageTest" time="2.056">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at org.example.page_object.ToolQALoginPage.validateLoginPage(ToolQALoginPage.java:69)
-	at test_classes.ToolQALoginPageTest.loginTest(ToolQALoginPageTest.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]></failure>
-    <system-out><![CDATA[login page text: Delete Account
-]]></system-out>
-  </testcase>
-  <testcase name="validateAlerts" classname="test_classes.ToolsQaAlertFrameWindowTest" time="0.717">
-    <system-out><![CDATA[Alerts test started 
-You clicked a button
-Alert Handled successfully
-Do you confirm action?
-You selected Ok
-Do you confirm action?
-You selected Cancel
-You entered Sachin
-]]></system-out>
-    <system-err><![CDATA[Apr 19, 2025 1:21:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="validateAlerts" classname="test_classes.ToolsQaAlertFrameWindowTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=135.0.7049.96)&#10;Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fdc610785265f2b8f77ea118dbc6552c, findElement {value=userName, using=id}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55320/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fdc610785265f2b8f77ea118dbc6552c"/>
+    <system-err><![CDATA[Apr 19, 2025 2:07:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 135
-Apr 19, 2025 1:22:12 AM org.example.base.BaseClass setup
+Apr 19, 2025 2:07:41 AM org.example.base.BaseClass setup
 INFO: url opened:  https://demoqa.com/login
 ]]></system-err>
   </testcase>
-  <testcase name="validatedNestedFrames" classname="test_classes.ToolsQaAlertFrameWindowTest" time="20.388">
-    <system-out><![CDATA[Frame test started 
-parent-frame-text: Parent frame
-Sample Nested Iframe page. There are nested iframes in this page. Use browser inspecter or firebug to check out the HTML source. In total you can switch between the parent frame and the nested child frame.
-Iframe handled successfully.
-]]></system-out>
+  <testcase name="validatedNestedFrames" classname="test_classes.ToolsQaAlertFrameWindowTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=135.0.7049.96)&#10;Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fdc610785265f2b8f77ea118dbc6552c, findElement {value=userName, using=id}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55320/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fdc610785265f2b8f77ea118dbc6552c"/>
   </testcase>
-  <testcase name="textBoxTest" classname="test_classes.ToolsQAElementsTest" time="0.723">
-    <system-out><![CDATA[test started 
-Test user98  >>>>>  Test_User-20@ymail.com
-email class :  class jdk.proxy2.$Proxy11 tagname  input
-Submit button -text: Submit
-xpath->>>   //label[text()='Impressive']
-]]></system-out>
-    <system-err><![CDATA[Apr 19, 2025 1:22:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="clean" classname="test_classes.ToolsQaAlertFrameWindowTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="textBoxTest" classname="test_classes.ToolsQAElementsTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=135.0.7049.96)&#10;Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [99e3294fd72a465641554043b266acb7, findElement {value=userName, using=id}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55337/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 99e3294fd72a465641554043b266acb7"/>
+    <system-err><![CDATA[Apr 19, 2025 2:07:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 135
-Apr 19, 2025 1:22:50 AM org.example.base.BaseClass setup
+Apr 19, 2025 2:07:44 AM org.example.base.BaseClass setup
 INFO: url opened:  https://demoqa.com/login
 ]]></system-err>
   </testcase>
-  <testcase name="validateActionOperationOnButton" classname="test_classes.ToolsQAElementsTest" time="14.493">
-    <system-out><![CDATA[3rd test started 
-An error occurred: no such element: Unable to locate element: {"method":"css selector","selector":"#dynamicClickMessage"}
-  (Session info: chrome=135.0.7049.96)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aea932f67ea1af8d4866aefbae9659ef, findElement {using=id, value=dynamicClickMessage}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53800/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aea932f67ea1af8d4866aefbae9659ef
-]]></system-out>
+  <testcase name="validateActionOperationOnButton" classname="test_classes.ToolsQAElementsTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=135.0.7049.96)&#10;Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [99e3294fd72a465641554043b266acb7, findElement {value=userName, using=id}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55337/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 99e3294fd72a465641554043b266acb7"/>
   </testcase>
-  <testcase name="validateLinksPage" classname="test_classes.ToolsQAElementsTest" time="3.304">
-    <system-out><![CDATA[3rd test started 
-Page scrolled to the bottom.
->>>>>>>>Created
-link response: Link has responded with staus 201 and status text Created
->>>>>>>>No Content
-link response: Link has responded with staus 201 and status text Created
->>>>>>>>Moved
-link response: Link has responded with staus 201 and status text Created
->>>>>>>>Bad Request
-link response: Link has responded with staus 201 and status text Created
->>>>>>>>Unauthorized
-link response: Link has responded with staus 204 and status text No Content
->>>>>>>>Forbidden
-link response: Link has responded with staus 301 and status text Moved Permanently
->>>>>>>>Not Found
-link response: Link has responded with staus 400 and status text Bad Request
-originalWindow: 61E1A566323C6B2445821AEF44C82885
-new tab Window: A599C0E93210AAD6A4CCBD373A1AA4FA
-https://demoqa.com/links
-]]></system-out>
+  <testcase name="validateLinksPage" classname="test_classes.ToolsQAElementsTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=135.0.7049.96)&#10;Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [99e3294fd72a465641554043b266acb7, findElement {value=userName, using=id}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55337/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 99e3294fd72a465641554043b266acb7"/>
   </testcase>
-  <testcase name="validateWebTableInsideElementPage" classname="test_classes.ToolsQAElementsTest" time="0.507">
-    <system-out><![CDATA[2nd test started 
-List value added inside Web Table
-]]></system-out>
+  <testcase name="validateWebTableInsideElementPage" classname="test_classes.ToolsQAElementsTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=135.0.7049.96)&#10;Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [99e3294fd72a465641554043b266acb7, findElement {value=userName, using=id}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/7c/nq8nl64n603...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55337/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 99e3294fd72a465641554043b266acb7"/>
+  </testcase>
+  <testcase name="cleanUp" classname="test_classes.ToolsQAElementsTest" time="0">
+    <skipped/>
   </testcase>
 </testsuite>
