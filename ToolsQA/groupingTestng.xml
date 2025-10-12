@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GroupingTest">
+    <listeners>
+        <!-- listener class-name="org.example.utilities.DynamicRetryTransformer"/ -->
+        <listener class-name="org.example.utilities.TestListener"/>
+    </listeners>
+    <test name="GroupingTest-Sanity">
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="SpecificTestcases.GroupingTestCases"/>
+        </classes>
+    </test>
+    <test name="GroupingTest-Regression">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="SpecificTestcases.GroupingTestCases"/>
+        </classes>
+    </test>
+</suite>

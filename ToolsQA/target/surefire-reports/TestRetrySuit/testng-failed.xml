@@ -14,6 +14,24 @@
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- test_classes.ToolQALoginPageTest -->
+      <class name="test_classes.ToolsQaAlertFrameWindowTest">
+        <methods>
+          <include name="validateAlerts"/>
+          <include name="setUp"/>
+          <include name="validatedNestedFrames"/>
+          <include name="clean"/>
+        </methods>
+      </class> <!-- test_classes.ToolsQaAlertFrameWindowTest -->
+      <class name="test_classes.ToolsQAElementsTest">
+        <methods>
+          <include name="validateLinksPage"/>
+          <include name="textBoxTest"/>
+          <include name="validateWebTableInsideElementPage"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+          <include name="validateActionOperationOnButton"/>
+        </methods>
+      </class> <!-- test_classes.ToolsQAElementsTest -->
     </classes>
   </test> <!-- ToolsQA Practice(failed) -->
 </suite> <!-- Failed suite [TestRetrySuit] -->
