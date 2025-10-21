@@ -26,7 +26,7 @@ public class GroupingTestCases {
     @Test(groups = {"regression", "sanity"}) //A test can belong to multiple groups
     public void testRegression2() {
         // Test case for regression testing
-        System.out.println("Running regression test 2");
+        System.out.println("Running sanity/regression test 2");
     }
 
     @Test

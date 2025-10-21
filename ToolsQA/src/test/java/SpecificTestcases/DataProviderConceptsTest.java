@@ -16,7 +16,7 @@ public class DataProviderConceptsTest {
         System.out.println("taking data from data provider: ");
         System.out.println("Name: " + name+ " Age: "+ age);
         System.out.println("Thread ID: " + Thread.currentThread().getId());
-        //Thread.sleep(15000);
+        Thread.sleep(3000);
     }
     /*
     Analogy:

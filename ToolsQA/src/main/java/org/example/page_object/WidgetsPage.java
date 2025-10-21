@@ -77,7 +77,11 @@ public class WidgetsPage {
         Select select = new Select(oldSelectMenu);
         select.selectByVisibleText(val);
 
-        //List<WebElement> list= oldSelectMenu.getOptions() ; all dropDown values
+        List<WebElement> list= select.getOptions();
+        for(WebElement option:list)
+        {
+            System.out.println(option.getText());
+        }
 
     }
 
