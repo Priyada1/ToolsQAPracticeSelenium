@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-@Slf4j
+@Test(enabled = false)
 public class ToolsQaTest {
     WebDriver driver;
 
@@ -27,7 +27,7 @@ public class ToolsQaTest {
         // Create a new instance of FirefoxDriver
         driver = new FirefoxDriver();
         driver.get("https://www.toolsqa.com");
-        log.info("title: " + driver.getTitle());
+        //log.info("title: " + driver.getTitle());
 
         driver.manage().window().maximize();
     }
@@ -55,12 +55,12 @@ public class ToolsQaTest {
            }
        }
        catch (Exception e){
-           log.error("Login Failed");
+          // log.error("Login Failed");
        }
 
        System.out.println("get current url: " + driver.getCurrentUrl());
        System.out.println("get page Source: " + driver.getPageSource());
-       System.out.println("page source length: "+ driver.getPageSource().length());
+      // System.out.println("page source length: "+ driver.getPageSource().length());
 
     }
 

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: runners.AmazonSmokeTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 476.621 s <<< FAILURE! - in runners.AmazonSmokeTestRunner
+runners.AmazonSmokeTestRunner.runScenario["Search for Samsung S24 Ultra 5G mobile and add to cart", "Amazon Product Search and Cart Functionality"](1)  Time elapsed: 476.11 s  <<< FAILURE!
+java.lang.AssertionError: No relevant search results found. Expected keywords: Samsung, S24, Ultra, mobile, or phone expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at step_definations_bdd.AmazonSearchResultsSteps.i_should_see_search_results_for_samsung_s24_ultra_5g(AmazonSearchResultsSteps.java:28)
+	at ✽.I should see search results for Samsung S24 Ultra 5G(file:///Users/chakrapanipriyadarshi/Desktop/Web-Automation-March-2025/ToolsQAPracticeSelenium/ToolsQA/src/test/test-resources/features/amazon_product_search.feature:13)
+

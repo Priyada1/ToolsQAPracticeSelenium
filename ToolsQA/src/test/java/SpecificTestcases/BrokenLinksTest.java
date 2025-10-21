@@ -38,7 +38,10 @@ public class BrokenLinksTest {
         System.out.println("total links: " + list.size());
 
         for (WebElement a : list) {
-            String url = a.getAttribute("href");
+            String url = a.getAttribute("href"); // .getAttribute(...): This is a method available on every WebElement.
+            // Its job is to read the value of any given HTML attribute from that element.
+            // 3."href": This is the specific HTML attribute you are asking for. In an <a> tag,
+            // the href attribute contains the destination URL of the link.
             // System.out.println(a);
             //System.out.println("url:>>>>>>> "+ url);
             try {

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Test Suite" parallel="methods" thread-count="2">
+    <!-- test name="Amazon Product Search Tests">
+        <classes>
+            <class name="runners.AmazonTestRunner"/>
+        </classes>
+    </test -->
+
+    <test name="Amazon Smoke Tests">
+        <classes>
+            <class name="runners.AmazonSmokeTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- test name="Amazon Regression Tests">
+        <classes>
+            <class name="runners.AmazonRegressionTestRunner"/>
+        </classes>
+    </test -->
+</suite>
