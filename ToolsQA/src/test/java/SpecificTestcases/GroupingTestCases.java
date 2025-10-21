@@ -40,4 +40,11 @@ public class GroupingTestCases {
         //Test case that does not belong to any group
         System.out.println("Running a test case which is not in sanity or regression group");
     }
+
+    @Test
+    public void testOther2() {
+        //Test case that does not belong to any group
+        System.out.println("Running a test case which is not in sanity or regression group");
+        Assert.assertTrue(true);
+    }
 }
