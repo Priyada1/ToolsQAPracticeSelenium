@@ -1,5 +1,6 @@
 package SpecificTestcases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GroupingTestCases {
@@ -9,24 +10,29 @@ public class GroupingTestCases {
     public void testSanity1() {
         // Test case for sanity testing
         System.out.println("Running sanity test 1");
+        Assert.assertTrue(true);
     }
 
     @Test(groups = {"sanity"})
     public void testSanity2() {
         // Test case for sanity testing
         System.out.println("Running sanity test 2");
+        Assert.assertTrue(true);
     }
 
     @Test(groups = {"regression"})
     public void testRegression1() {
         // Test case for regression testing
         System.out.println("Running regression test 1");
+        Assert.assertFalse(false);
+
     }
 
     @Test(groups = {"regression", "sanity"}) //A test can belong to multiple groups
     public void testRegression2() {
         // Test case for regression testing
         System.out.println("Running sanity/regression test 2");
+        Assert.assertTrue(true);
     }
 
     @Test
