@@ -10,7 +10,7 @@ Feature: Amazon Product Search and Cart Functionality
   @SmokeTest
   Scenario: Search for Samsung S24 Ultra 5G mobile and add to cart
     When I search for "samsung s24 ultra 5g mobile"
-    Then I should see search results for Samsung S24 Ultra 5G
+    Then I should see search results for Galaxy S24 Ultra 5G
     When I click on the first product from search results
     Then I should be on the product details page
     When I click on "Add to Cart" button
