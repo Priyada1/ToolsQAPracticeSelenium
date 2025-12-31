@@ -49,6 +49,26 @@ public class ToolsQAWidgetsTest extends BaseClass {
         widgetsPage.moveSliderAndValidateSliderValue();
     }
 
+    @Test
+    public void datepickerWidgetTest() {
+        System.out.println("date picker test started");
+        
+        // Step 1: Open https://demoqa.com/login URL (already done in @BeforeClass setup)
+        // Step 2: Login to portal (already done in @BeforeClass setUp)
+        
+        // Step 3: Click on widgets
+        widgetsPage = new WidgetsPage(driver);
+        widgetsPage.clickOnWidgetsSection();
+        
+        // Step 4: Click on date picker
+        widgetsPage.clickOnDatePickerPageAndValidate();
+        
+        // Step 5: Select today's date
+        widgetsPage.selectTodaysDate();
+        
+        System.out.println("date picker test completed");
+    }
+
     @AfterClass
     public void cleanUp() {
         driver.quit();
